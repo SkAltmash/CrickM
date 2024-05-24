@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>crickM</title>
+</head>
+<body>
+  <div class="contaner">
+   <div class="teamname">
+    <h1>Cicks<samp id="m">M</samp></h1>
+     <div>Enter First team name<input type="text" id="first-team">
+    <span id="error1"></span></div>
+     <div>Enter Second team name<input type="text" id="second-Team">  <span id="error2"></span></div>
+     <span><button onclick="toss()">Toss</button></span>
+
+   </div>
+   <div class="chose">
+    <span class="cheek-winer"></span>
+    <button onclick="opentobat()">bat</button>
+    <button onclick="opentoball()">ball</button>
+    <button id="conform" onclick="conform()">Conform</button>
+   </div>
+  </div>
+  <div class="scordecard">
+    <div id="teamscored">
+    <div>
+      <h2 id="teamaname">Team A</h2><span id="teamascored">00</span>/<span id="teamawicket">0</span>
+      <span id="teamaover">0</span>.<span id="teamaball">0</span>
+    </div>
+    <div id="teamb">
+      <h2 id="teambname">Team b</h2><span id="teambscored">yet to bat</span>/<span id="teambwicket"></span>
+      <span id="teambover"></span>.<span id="teambball"></span>
+  </div>
+    
+    </div>
+    <div id="massage">Team A won the toss</div>
+    <div id="currentscored"><h1>Lets start </h1></div>
+ <div class="scored">
+  <div>
+  <button onclick="run(0)">0</button>
+  <button onclick="run(1)">1</button>
+  <button onclick="run(2)">2</button>
+  <button onclick="run(3)">3</button>
+  <button onclick="run(4)">4</button>
+  <button onclick="run(6)">6</button>
+  </div>
+  <div>
+  <button onclick="run(7)">Wide</button>
+  <button onclick="run(8)">wicket</button>
+  <button onclick="run(9)">No Ball</button>
+  </div>
+ </div>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
